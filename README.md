@@ -1,7 +1,7 @@
 # Project Transcriptomics J2P4
 
 # Inhoud & Structuur
-* Data (Raw)/ - Rauwe data 
+* "Data (Raw)"/ - Rauwe data 
 * Data (processed)/ - Verwerkte data
 * Scripts/ - Gebruikte scripts
 * Resultaten/ - Grafieken en tabellen
