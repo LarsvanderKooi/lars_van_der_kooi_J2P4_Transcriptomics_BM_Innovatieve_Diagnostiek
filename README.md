@@ -18,7 +18,7 @@
 
 
 # Resultaten
-<img width="1292" height="932" alt="hsa04660 pathview" src="https://github.com/user-attachments/assets/85e667b5-7048-446d-9bd7-af2bd6aaa2fa" />
+<img width="646" height="466" alt="hsa04660 pathview" src="https://github.com/user-attachments/assets/85e667b5-7048-446d-9bd7-af2bd6aaa2fa" />
 
 
 
