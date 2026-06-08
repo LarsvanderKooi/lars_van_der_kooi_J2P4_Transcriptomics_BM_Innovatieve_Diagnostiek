@@ -20,7 +20,7 @@ methode, flowschema. Zie leerdoelen voor minimale inhoud. Scripts, data etc. kun
 # **Resultaten**
 *max overlap = dan in onbeperkt? (connettors)*
 +- 200 woorden
-inclusief correcte verwijzingen
+inclusief correcte verwijzingen, check log-fold
 
 # **Conclusie**
 +- 200 woorden
