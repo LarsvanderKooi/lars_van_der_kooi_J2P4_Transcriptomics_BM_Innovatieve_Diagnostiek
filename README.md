@@ -23,12 +23,15 @@ methode, flowschema. Zie leerdoelen voor minimale inhoud. Scripts, data etc. kun
 inclusief correcte verwijzingen, check log-fold
 
 **Volcano plot**
+
 <img width="692" height="460" alt="Volcano plot" src="https://github.com/user-attachments/assets/7091a423-c351-4ac6-88c3-73bbfe390350" />
 
 **Barplot**
+
 <img width="692" height="460" alt="Barplot" src="https://github.com/user-attachments/assets/7f7044ef-29af-469d-ab6d-c4cbb037a4b2" />
 
 **Rheumatoid arthritis pathway**
+
 <img width="746" height="429,5" alt="hsa05323 pathview" src="https://github.com/user-attachments/assets/0f9d33c6-6b24-44ad-b4e8-a21e8f2376d4" />
 
 
