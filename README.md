@@ -12,7 +12,7 @@ Reumatoïde artritis is een chronische auto-immuunziekte waarbij langdurige onts
 
 Door de ontwikkeling van RNA-sequencing (RNA-seq) is het mogelijk om veranderingen in genexpressie op een grotere schaal te onderzoeken. RNA-seq maakt het mogelijk om duizenden genen tegelijkertijd te analyseren en verschillen tussen gezonde en zieke individuen te vergelijken. Analyse van RNA-sequentie data kan zicht geven in de moleculaire werking die kunnen bijdragen aan het ontstaan van RA. (Sumitomo et al., 2018)
 
-In deze studie werden RNA-sequentie data van gezonde controles en patiënten met reumatoïde artritis geanalyseerd. Met het R pakket DESeq2 werden differentieel genen die tot expressie gebracht waren geïdentificeerd. Vervolgens werd er een GO-analyse en een KEGG-pathway-analyse uitgevoerd om de biologische processen en signaalroutes te bepalen die betrokken zijn bij de veranderingen in genexpressie. Het doel van deze studie was om verschillen in genexpressie tussen gezonde en RA-monsters te identificeren en deze veranderingen te interpreteren.
+In deze studie werden RNA-sequentie data van gezonde controles en patiënten met reumatoïde artritis geanalyseerd. Met het R pakket DESeq2 werden differentieel genen die tot expressie gebracht waren geïdentificeerd. Vervolgens werd er een GO-analyse en een KEGG-pathway-analyse uitgevoerd om de biologische processen en signaalroutes te bepalen die betrokken zijn bij de veranderingen in genexpressie. Het doel van deze studie was om verschillen in genexpressie tussen gezonde en RA-monsters te identificeren.
 
 Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
 
