@@ -28,7 +28,7 @@ De bijbehorend scripts kunnen worden gevonden in het mapje “Scripts”, verder
 
 
 # **Resultaten**
-Na het mappen van de RNA-sequencing reads en analyse met DESeq2 werden in totaal 29.407 genen onderzocht. Hiervan werden 4.572 genen als significant geëxpresseerd geïdentificeerd tussen gezonde controles en patiënten met reumatoïde artritis (padj < 0,05 en |log2FoldChange| > 1). Van deze genen waren er 2.085 verhoogd tot expressie en 2.487 verlaagd tot expressie in de groep met reumatoïde artritis.
+Na het mappen van de RNA-sequencing reads en analyse met DESeq2 werden in totaal 29.407 genen onderzocht. Hiervan werden 4.572 genen als significant geëxpresseerd gevonden tussen gezonde controles en patiënten met reumatoïde artritis (padj < 0,05 en |log2FoldChange| > 1). Van deze genen waren er 2.085 verhoogd tot expressie en 2.487 verlaagd tot expressie in de groep met reumatoïde artritis.
 
 De volcano plot (Figuur 1) laat zien dat meerdere genen sterke veranderingen in expressie vertoonden. Voorbeelden van genen met een verhoogde expressie zijn IL1B (log2FC = 5,26), CXCL1 (log2FC = 4,62), IFNG (log2FC = 3,92) en CD28 (log2FC = 3,82).
 
