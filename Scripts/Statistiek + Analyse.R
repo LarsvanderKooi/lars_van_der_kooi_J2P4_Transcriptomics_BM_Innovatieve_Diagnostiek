@@ -84,6 +84,13 @@ ego_BP <- enrichGO(
   readable = TRUE
 )
 
+# GO-resultaten opslaan
+write.csv(
+  as.data.frame(ego_BP),
+  "GO_results.csv",
+  row.names = FALSE
+)
+
 head(as.data.frame(ego_BP))
 dim(as.data.frame(ego_BP))
 
