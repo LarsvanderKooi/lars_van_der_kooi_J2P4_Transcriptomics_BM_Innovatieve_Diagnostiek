@@ -47,13 +47,13 @@ Figuur 1. Volcano plot van verschillen in genexpressie tussen gezonde controles 
 
 <img width="692" height="460" alt="Barplot" src="https://github.com/user-attachments/assets/7f7044ef-29af-469d-ab6d-c4cbb037a4b2" />
 
-
+Figuur 2. Top 10 verschillen in biologische processen uit de GO-analyse. De analyse werd uitgevoerd op significant geëxpresseerde genen (padj < 0,05 en log2FC > 1). De weergegeven GO-termen zijn gerangschikt op significantie en laten zien welke biologische processen het sterkst vertegenwoordigd zijn binnen de dataset.
 
 **Rheumatoid arthritis pathway**
 
 <img width="746" height="429,5" alt="hsa05323 pathview" src="https://github.com/user-attachments/assets/0f9d33c6-6b24-44ad-b4e8-a21e8f2376d4" />
 
-
+Figuur 3. Visualisatie van de KEGG-pathway Rheumatoid Arthritis (hsa05323) met behulp van Pathview. Genen zijn ingekleurd op basis van hun log2FoldChange tussen patiënten met reumatoïde artritis en gezonde controles. Rood geeft verhoogde expressie weer, groen geeft verlaagde expressie aan. Meerdere genen binnen immuun en ontstekingsroutes vertoonden veranderde expressieniveaus.
 
 
 
