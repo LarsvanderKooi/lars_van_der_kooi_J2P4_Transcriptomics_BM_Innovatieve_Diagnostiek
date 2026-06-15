@@ -7,6 +7,18 @@ treatment_table_project <- data.frame(treatment)
 rownames(treatment_table_project) <- c('Norm1', 'Norm2', 'Norm3', 'Norm4', 'Ziek1', 'Ziek2', "Ziek3", "Ziek4")
 head(treatment_table_project)
 
+#metadata opslaan voor GitHub
+metadata <- data.frame(
+  Sample = rownames(treatment_table_project),
+  Treatment = treatment_table_project$treatment
+)
+
+write.csv(
+  metadata,
+  "metadata.csv",
+  row.names = FALSE
+)
+
 dds_project <- DESeqDataSetFromMatrix(countData = counts_Project,
                                       colData = treatment_table_project,
                                       design = ~ treatment)
