@@ -41,7 +41,8 @@ Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd me
 **Volcano plot**
 
 <img width="692" height="460" alt="Volcano plot" src="https://github.com/user-attachments/assets/7091a423-c351-4ac6-88c3-73bbfe390350" />
-Figuur 1. *Volcano plot van verschillen in genexpressie tussen gezonde controles en patiënten met reumatoïde artritis*. Elk punt geeft een gen aan. De x-as toont de log2FoldChange en de y-as de gecorrigeerde p-waarde. Genen met significante veranderingen in expressie (padj < 0,05 en log2FC > 1) zijn zichtbaar aan de linker en de rechterkant van de plot.
+
+Figuur 1. Volcano plot van verschillen in genexpressie tussen gezonde controles en patiënten met reumatoïde artritis. Elk punt geeft een gen aan. De x-as toont de log2FoldChange en de y-as de gecorrigeerde p-waarde. Genen met significante veranderingen in expressie (padj < 0,05 en log2FC > 1) zijn zichtbaar aan de linker en de rechterkant van de plot.
 
 
 **Barplot**
