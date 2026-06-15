@@ -16,9 +16,14 @@ Door de ontwikkeling van RNA-sequencing (RNA-seq) is het mogelijk om verandering
 
 In deze studie werden RNA-sequentie data van gezonde controles en patiënten met reumatoïde artritis geanalyseerd. Met het R pakket DESeq2 werden differentieel genen die tot expressie gebracht waren geïdentificeerd. Vervolgens werd er een GO-analyse en een KEGG-pathway-analyse uitgevoerd om de biologische processen en signaalroutes te bepalen die betrokken zijn bij de veranderingen in genexpressie. Het doel van deze studie was om verschillen in genexpressie tussen gezonde en RA-monsters te identificeren en deze veranderingen te interpreteren.
 
-
-
 # **Methode**
+Bij dit onderzoek werd gebruikgemaakt van RNA-sequencing data van vier gezonde controles en vier patiënten met reumatoïde artritis. De analyse werd uitgevoerd met behulp van R.
+De ruwe FASTQ-files werden eerst gemapt tegen het humane referentiegenoom (GRCh38) met behulp van het R-pakket Rsubread. Hiervoor werd een referentie-index opgebouwd met buildindex(), waarna paired-end reads werden uitgelijnd met align(). Vervolgens werd met featureCounts() het aantal reads per gen bepaald op basis van een GTF-bestand. Hierdoor werd er een countmatrix met genexpressiewaarden voor alle monsters verkregen.
+Verschillen in genexpressie tussen gezonde en patiënten-monsters werden bepaald met het pakket DESeq2. De countmatrix en experimentele condities werden ingelezen in een DESeq2-object, waarna normalisatie en statistische analyse werd uitgevoerd. Genen met een aangepaste p-waarde (padj) kleiner dan 0,05 en een absolute log2 fold change groter dan 1 werden beschouwd als significant differentieel geëxpresseerd. De resultaten werden gevisualiseerd met een volcano plot.
+Om de biologische betekenis van de gevonden genen te onderzoeken, werd een (GO)-analyse uitgevoerd met het pakket clusterProfiler. Hiermee werden overheersende biologische processen geïdentificeerd. Daarnaast werd er een KEGG pathway-analyse uitgevoerd. De pathway "Rheumatoid Arthritis" (hsa05323) werd gevisualiseerd met het pakket pathview, waardoor genexpressieveranderingen binnen bekende ziekte-gerelateerde signaalroutes konden worden bekeken en vergeleken.
+De bijbehorend scripts kunnen worden gevonden in het mapje “Scripts”
+
+
 +- 200 woorden
 methode, flowschema. Zie leerdoelen voor minimale inhoud. Scripts, data etc. kunnen in een aparte folder met verwijzing.
 
