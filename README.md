@@ -34,7 +34,7 @@ Na het mappen van de RNA-sequencing reads en analyse met DESeq2 werden in totaal
 
 De volcano plot (Figuur 1) laat zien dat meerdere genen sterke veranderingen in expressie vertoonden. Voorbeelden van genen met een verhoogde expressie zijn IL1B (log2FC = 5,26), CXCL1 (log2FC = 4,62), IFNG (log2FC = 3,92) en CD28 (log2FC = 3,82).
 
-De Gene Ontology (GO)-analyse identificeerde in totaal 323 significant GO-termen (padj < 0,05). De sterkst verrijkte biologische processen waren lymphocyte differentiation, adaptive immune response, B cell mediated immunity en immune response-regulating cell surface receptor signaling pathway (Figuur 2).
+De GO-analyse identificeerde in totaal 323 significant GO-termen (padj < 0,05). De sterkst verrijkte biologische processen waren lymphocyte differentiation, adaptive immune response, B cell mediated immunity en immune response-regulating cell surface receptor signaling pathway (Figuur 2).
 
 Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd met behulp van Pathview (Figuur 3). Binnen deze pathway werden verschillende genen met verhoogde expressie aangetroffen, waaronder IL1B, IFNG, TLR2, TLR4, CXCL1 en CD28. De pathwayvisualisatie liet zien dat meerdere genen binnen deze signaalroute veranderde expressieniveaus vertoonden ten opzichte van de controlegroep.
 
@@ -57,9 +57,10 @@ Figuur 2. Top 10 verschillen in biologische processen uit de GO-analyse. De anal
 Figuur 3. Visualisatie van de KEGG-pathway Rheumatoid Arthritis (hsa05323) met behulp van Pathview. Genen zijn ingekleurd op basis van hun log2FoldChange tussen patiënten met reumatoïde artritis en gezonde controles. Rood geeft verhoogde expressie weer, groen geeft verlaagde expressie aan. Meerdere genen binnen immuun en ontstekingsroutes vertoonden veranderde expressieniveaus.
 
 
-
-
 # **Conclusie**
+
+
+
 +- 200 woorden
 inclusief aanbevelingen en onderzoek in context plaatsen.
 
