@@ -57,12 +57,19 @@ Figuur 3. Visualisatie van de KEGG-pathway Rheumatoid Arthritis (hsa05323) met b
 
 # **Conclusie**
 In deze studie werd RNA-sequencing data van gezonde controles en patiënten met reumatoïde artritis geanalyseerd om verschillen in genexpressie te identificeren. Met behulp van DESeq2 werden 4.572 significant differentieel geëxpresseerde genen gevonden. De GO-analyse liet zien dat vooral immuungerelateerde processen verrijkt waren, waaronder lymphocyte differentiation, adaptive immune response en B cell mediated immunity. Daarnaast toonde de KEGG-analyse van de Rheumatoid Arthritis-pathway verhoogde expressie van meerdere ontstekingsgerelateerde genen, waaronder IL1B, IFNG, TLR2, TLR4 en CD28.
-Deze resultaten komen overeen met studies over reumatoïde artritis als een chronische auto-immuunziekte waarbij er een ontregeling is van zowel het aangeboren als het adaptieve immuniteit die een belangrijke rol speelt bij reumatoïde artritis (Smolen et al., 2020). Ook sluiten de bevindingen aan bij eerdere transcriptomische studies die een verhoogde activiteit van immuuncellen en ontstekingsroutes bij reumatoïde artritis patiënten hebben aangetoond (Zhang et al., 2019).
+Deze resultaten komt overeen met een studie over reumatoïde artritis als een chronische auto-immuunziekte waarbij er een ontregeling is van zowel het aangeboren als het adaptieve immuniteit die een belangrijke rol speelt bij reumatoïde artritis (Smolen et al., 2020). Ook sluiten de bevindingen aan bij een eerdere studie waarbij transcriptomics was gebruikt, in deze studie werd er een verhoogde activiteit van immuuncellen en ontstekingsroutes bij reumatoïde artritis patiënten gevonden (Zhang et al., 2019).
 Een beperking van deze studie is het relatief kleine aantal monsters en het gebruik van subsets van de sequencingdata. Toekomstig onderzoek kan gebruikmaken van meer en grotere datasets en het gebruiken van meer validatiemethoden, zoals qPCR. Het gebruik van transcriptomics  toont aan dat dit een goede methode is om biologische processen en signaalroutes betrokken bij in dit geval reumatoïde artritis in kaart te brengen.
 
 Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
 
-# **uitleg competentie beheren**
+##**Nog doen!!**
+**uitleg competentie beheren**
 kijk op BB voor hulpvragen
 o File (bijvoorbeeld een md file) met uitleg over Data Stewardship
 o File met uitleg over toepassing beheren met GitHub
+
+**checken R script juist geupdate**
+**spelling/gramatica check**
+**Alle bronnen toegevoegd in het mapje**
+**Feedback verwerken**
+**rubric document nog nachecken**
