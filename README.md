@@ -74,3 +74,16 @@ o File met uitleg over toepassing beheren met GitHub
 **Feedback verwerken**
 **rubric document nog nachecken**
 **Nieuwe Bar-plot toevoegen en in conclusie aanpassen**
+
+
+
+#**Bronnenlijst**
+McInnes, I., Schett, G. Cytokines in the pathogenesis of rheumatoid arthritis. Nat Rev Immunol 7, 429–442 (2007). https://doi.org/10.1038/nri2094
+
+Platzer A, Nussbaumer T, Karonitsch T, Smolen JS, Aletaha D (2019) Analysis of gene expression in rheumatoid arthritis and related conditions offers insights into sex-bias, gene biotypes and co-expression patterns. PLoS ONE 14(7): e0219698. https://doi.org/10.1371/journal.pone.0219698
+
+Smolen J, Aletaha D, McInnes I, Rheumatoid arthritis, The Lancet, 2016; 388, 2023-2038
+
+Sumitomo, S., Nagafuchi, Y., Tsuchida, Y. et al. Transcriptome analysis of peripheral blood from patients with rheumatoid arthritis: a systematic review. Inflamm Regener 38, 21 (2018). https://doi.org/10.1186/s41232-018-0078-5
+
+Zhang, F., Wei, K., Slowikowski, K. et al. Defining inflammatory cell states in rheumatoid arthritis joint synovial tissues by integrating single-cell transcriptomics and mass cytometry. Nat Immunol 20, 928–942 (2019). https://doi.org/10.1038/s41590-019-0378-1
