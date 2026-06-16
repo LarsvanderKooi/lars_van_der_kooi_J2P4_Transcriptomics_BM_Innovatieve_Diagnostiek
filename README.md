@@ -80,7 +80,7 @@ o File met uitleg over toepassing beheren met GitHub
 **Alle bronnen toegevoegd in het mapje**
 **Feedback verwerken**
 **rubric document nog nachecken**
-**Metadata toevoegen**
+**in methode is statistiek goed aangegeven?**
 
 
 
