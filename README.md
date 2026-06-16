@@ -73,3 +73,4 @@ o File met uitleg over toepassing beheren met GitHub
 **Alle bronnen toegevoegd in het mapje**
 **Feedback verwerken**
 **rubric document nog nachecken**
+**Nieuwe Bar-plot toevoegen en in conclusie aanpassen**
