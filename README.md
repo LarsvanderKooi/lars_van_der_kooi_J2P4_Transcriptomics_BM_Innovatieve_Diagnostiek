@@ -1,4 +1,4 @@
-# **Project Transcriptomics J2P4**
+# **Differentiële genexpressie bij reumatoïde artritis wijst op activatie van adaptieve immuunresponsen**
 
 # **Inhoud & Structuur**
 * **Scripts/** - Gebruikte scripts
