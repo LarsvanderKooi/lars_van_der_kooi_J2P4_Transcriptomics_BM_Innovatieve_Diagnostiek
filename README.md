@@ -83,7 +83,7 @@ McInnes, I., Schett, G. Cytokines in the pathogenesis of rheumatoid arthritis. N
 
 Platzer A, Nussbaumer T, Karonitsch T, Smolen JS, Aletaha D (2019) Analysis of gene expression in rheumatoid arthritis and related conditions offers insights into sex-bias, gene biotypes and co-expression patterns. PLoS ONE 14(7): e0219698. https://doi.org/10.1371/journal.pone.0219698
 
-Smolen J, Aletaha D, McInnes I, Rheumatoid arthritis, The Lancet, 2016; 388, 2023-2038
+Smolen J, Aletaha D, McInnes I, Rheumatoid arthritis, The Lancet, 2016; 388, 2023-2038 https://doi.org/10.1016/S0140-6736(16)30173-8
 
 Sumitomo, S., Nagafuchi, Y., Tsuchida, Y. et al. Transcriptome analysis of peripheral blood from patients with rheumatoid arthritis: a systematic review. Inflamm Regener 38, 21 (2018). https://doi.org/10.1186/s41232-018-0078-5
 
