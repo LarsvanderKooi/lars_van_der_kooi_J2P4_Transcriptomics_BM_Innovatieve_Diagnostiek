@@ -14,7 +14,7 @@ Door de ontwikkeling van RNA-sequencing (RNA-seq) is het mogelijk om verandering
 
 Hoewel reumatoïde artritis uitgebreid is onderzocht, is nog niet duidelijk welke genen en biologische processen het sterkst verschillen tussen gezonde personen en patiënten met RA. Analyse van genexpressie kan helpen deze moleculaire mechanismen beter in kaart te brengen.
 
-In deze studie werden RNA-sequentie data van gezonde controles en patiënten met reumatoïde artritis geanalyseerd. Met het R pakket DESeq2 werden differentieel genen die tot expressie gebracht waren geïdentificeerd. Vervolgens werd er een GO-analyse en een KEGG-pathway-analyse uitgevoerd om de biologische processen en signaalroutes te bepalen die betrokken zijn bij de veranderingen in genexpressie. Het doel van deze studie was om verschillen in genexpressie tussen gezonde en RA-monsters te identificeren.
+In deze studie werden RNA-sequentie data uit (Platzer et al., 2019) van gezonde controles en patiënten met reumatoïde artritis geanalyseerd waarbij de samples zijn verkregen via een synoviumbiop. Met het R pakket DESeq2 werden differentieel genen die tot expressie gebracht waren geïdentificeerd. Vervolgens werd er een GO-analyse en een KEGG-pathway-analyse uitgevoerd om de biologische processen en signaalroutes te bepalen die betrokken zijn bij de veranderingen in genexpressie. Het doel van deze studie was om verschillen in genexpressie tussen gezonde en RA-monsters te identificeren.
 
 Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
 
@@ -80,7 +80,7 @@ o File met uitleg over toepassing beheren met GitHub
 **Alle bronnen toegevoegd in het mapje**
 **Feedback verwerken**
 **rubric document nog nachecken**
-**Nieuwe Bar-plot toevoegen en in conclusie aanpassen**
+**in methode is statistiek goed aangegeven?**
 
 
 
