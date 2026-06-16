@@ -26,7 +26,7 @@ De ruwe FASTQ-files werden eerst gemapt tegen het humane referentiegenoom (GRCh3
 Verschillen in genexpressie tussen gezonde en patiënten-monsters werden bepaald met het pakket DESeq2. De countmatrix en experimentele condities werden ingelezen in een DESeq2-object, waarna normalisatie en statistische analyse werd uitgevoerd. Genen met een aangepaste p-waarde (padj) kleiner dan 0,05 en een absolute log2 fold change groter dan 1 werden beschouwd als significant differentieel geëxpresseerd. De resultaten werden gevisualiseerd met een volcano plot.
 Om de biologische betekenis van de gevonden genen te onderzoeken, werd een (GO)-analyse uitgevoerd met het pakket clusterProfiler. Hiermee werden overheersende biologische processen geïdentificeerd. Daarnaast werd er een KEGG pathway-analyse uitgevoerd. De pathway "Rheumatoid Arthritis" (hsa05323, https://www.genome.jp/dbget-bin/www_bget?pathway+hsa05323) werd gevisualiseerd met het pakket pathview, waardoor genexpressieveranderingen binnen bekende ziekte-gerelateerde signaalroutes konden worden bekeken en vergeleken.
 
-De bijbehorend scripts en packages kunnen worden gevonden in het mapje “Scripts”, verdere bestanden waaronder de Count matrix, DESeq2 file, GO-resultaten en het Metadata kunnen worden gevonden in het mapje "Resultaten"
+De bijbehorend scripts en packages kunnen worden gevonden in het mapje “Scripts”, verdere bestanden waaronder de rauwe data, Count matrix, DESeq2 file, GO-resultaten en het Metadata kunnen worden gevonden in het mapje "Resultaten"
 
 
 # **Resultaten**
