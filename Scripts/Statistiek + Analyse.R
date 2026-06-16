@@ -34,13 +34,13 @@ head(write.table)
 sum(resultaten$padj < 0.05 & resultaten$log2FoldChange > 1, na.rm = TRUE)
 sum(resultaten$padj < 0.05 & resultaten$log2FoldChange < -1, na.rm = TRUE)
 
-hoogste_fold_change_e.coli <- resultaten[order(resultaten$log2FoldChange, decreasing = TRUE), ]
-laagste_fold_change_e.coli <- resultaten[order(resultaten$log2FoldChange, decreasing = FALSE), ]
-laagste_p_waarde_e.coli <- resultaten[order(resultaten$padj, decreasing = FALSE), ]
+hoogste_fold_change <- resultaten[order(resultaten$log2FoldChange, decreasing = TRUE), ]
+laagste_fold_change <- resultaten[order(resultaten$log2FoldChange, decreasing = FALSE), ]
+laagste_p_waarde<- resultaten[order(resultaten$padj, decreasing = FALSE), ]
 
-head(hoogste_fold_change_e.coli)
-head(laagste_fold_change_e.coli)
-head(laagste_p_waarde_e.coli)
+head(hoogste_fold_change)
+head(laagste_fold_change)
+head(laagste_p_waarde)
 
 EnhancedVolcano(resultaten,
                 lab = rownames(resultaten),
