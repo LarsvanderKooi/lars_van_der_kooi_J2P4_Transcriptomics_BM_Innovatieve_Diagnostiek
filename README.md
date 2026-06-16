@@ -30,12 +30,17 @@ De bijbehorend scripts en packages kunnen worden gevonden in het mapje “Script
 
 
 # **Resultaten**
+Om verschillen in genexpressie tussen gezonde controles en patiënten met reumatoïde artritis te identificeren, werd RNA-sequencing data geanalyseerd met behulp van DESeq2, gevolgd door een GO en een KEGG analyse.
+
+### **Differentiële genexpressie**
 Na het mappen van de RNA-sequencing reads en analyse met DESeq2 werden in totaal 29.407 genen onderzocht. Hiervan werden 4.572 genen als significant geëxpresseerd gevonden tussen gezonde controles en patiënten met reumatoïde artritis (padj < 0,05 en |log2FoldChange| > 1). Van deze genen waren er 2.085 verhoogd tot expressie en 2.487 verlaagd tot expressie in de groep met reumatoïde artritis.
 
 De volcano plot (Figuur 1) laat zien dat 29407 genen sterke veranderingen in expressie vertoonden ten opzichte van de controle. Voorbeelden van genen met een verhoogde expressie zijn CD28 (log2FC = 3,82), SRGN (log2FC = 3,26) en CXCL8 (log2FC = 8,89) en met verlaagde expressie zijn ANKRD30BL (log2FC = -10,11), SLC9A3R2 (log2FC = -5,61) en BAX (Log2FC = -3,47)
 
+## **Gene Ontology analyse**
 De GO-analyse identificeerde in totaal 323 significant GO-termen (padj < 0,05). De sterkst verrijkte biologische processen waren lymphocyte differentiation, adaptive immune response, B cell mediated immunity en immune response-regulating cell surface receptor signaling pathway (Figuur 2).
 
+## **KEGG pathway analyse**
 Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd met behulp van Pathview (Figuur 3). Binnen deze pathway werden verschillende genen met verhoogde expressie aangetroffen, waaronder IL1B, IFNG, TLR2, TLR4, CXCL1 en CD28. De pathwayvisualisatie liet zien dat meerdere genen binnen deze signaalroute veranderde expressieniveaus vertoonden ten opzichte van de controlegroep.
 
 **Volcano plot**
