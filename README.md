@@ -30,7 +30,7 @@ De bijbehorend scripts kunnen worden gevonden in het mapje “Scripts”, verder
 # **Resultaten**
 Na het mappen van de RNA-sequencing reads en analyse met DESeq2 werden in totaal 29.407 genen onderzocht. Hiervan werden 4.572 genen als significant geëxpresseerd gevonden tussen gezonde controles en patiënten met reumatoïde artritis (padj < 0,05 en |log2FoldChange| > 1). Van deze genen waren er 2.085 verhoogd tot expressie en 2.487 verlaagd tot expressie in de groep met reumatoïde artritis.
 
-De volcano plot (Figuur 1) laat zien dat meerdere genen sterke veranderingen in expressie vertoonden ten opzichte van de controle. Voorbeelden van genen met een verhoogde expressie zijn CD28 (log2FC = 3,82), SRGN (log2FC = 3,26) en CXCL8 (log2FC = 8,89) en met verlaagde expressie zijn ANKRD30BL (log2FC = -10,11), SLC9A3R2 (log2FC = -5,61) en BAX (Log2FC = -3,47)
+De volcano plot (Figuur 1) laat zien dat meerdere genen sterke veranderingen in expressie vertoonden ten opzichte van de controle **Hoeveel?, kijk volcano plot**. Voorbeelden van genen met een verhoogde expressie zijn CD28 (log2FC = 3,82), SRGN (log2FC = 3,26) en CXCL8 (log2FC = 8,89) en met verlaagde expressie zijn ANKRD30BL (log2FC = -10,11), SLC9A3R2 (log2FC = -5,61) en BAX (Log2FC = -3,47)
 
 De GO-analyse identificeerde in totaal 323 significant GO-termen (padj < 0,05). De sterkst verrijkte biologische processen waren lymphocyte differentiation, adaptive immune response, B cell mediated immunity en immune response-regulating cell surface receptor signaling pathway (Figuur 2).
 
