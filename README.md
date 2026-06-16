@@ -19,18 +19,18 @@ Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
 # **Methode**
 <img width="1562" height="456" alt="image" src="https://github.com/user-attachments/assets/3cfc1a46-19fc-464a-93db-7d893c955114" />
 
-Bij dit onderzoek werd gebruikgemaakt van RNA-sequencing data van vier gezonde controles en vier patiënten met reumatoïde artritis. De analyse werd uitgevoerd met behulp van R.
+Bij dit onderzoek werd gebruikgemaakt van RNA-sequencing data van vier gezonde controles en vier patiënten met reumatoïde artritis. De analyse werd uitgevoerd met behulp van R (version 4.5.2).
 De ruwe FASTQ-files werden eerst gemapt tegen het humane referentiegenoom (GRCh38) met behulp van het R-pakket Rsubread. Hiervoor werd een referentie-index opgebouwd met buildindex(), waarna paired-end reads werden uitgelijnd met align(). Vervolgens werd met featureCounts() het aantal reads per gen bepaald op basis van een GTF-bestand. Hierdoor werd er een countmatrix met genexpressiewaarden voor alle monsters verkregen.
 Verschillen in genexpressie tussen gezonde en patiënten-monsters werden bepaald met het pakket DESeq2. De countmatrix en experimentele condities werden ingelezen in een DESeq2-object, waarna normalisatie en statistische analyse werd uitgevoerd. Genen met een aangepaste p-waarde (padj) kleiner dan 0,05 en een absolute log2 fold change groter dan 1 werden beschouwd als significant differentieel geëxpresseerd. De resultaten werden gevisualiseerd met een volcano plot.
 Om de biologische betekenis van de gevonden genen te onderzoeken, werd een (GO)-analyse uitgevoerd met het pakket clusterProfiler. Hiermee werden overheersende biologische processen geïdentificeerd. Daarnaast werd er een KEGG pathway-analyse uitgevoerd. De pathway "Rheumatoid Arthritis" (hsa05323) werd gevisualiseerd met het pakket pathview, waardoor genexpressieveranderingen binnen bekende ziekte-gerelateerde signaalroutes konden worden bekeken en vergeleken.
 
-De bijbehorend scripts kunnen worden gevonden in het mapje “Scripts”, verdere bestanden waaronder de Count matrix, DESeq2 file, GO-resultaten en het Metadata kunnen worden gevonden in het mapje "Resultaten"
+De bijbehorend scripts en packages kunnen worden gevonden in het mapje “Scripts”, verdere bestanden waaronder de Count matrix, DESeq2 file, GO-resultaten en het Metadata kunnen worden gevonden in het mapje "Resultaten"
 
 
 # **Resultaten**
 Na het mappen van de RNA-sequencing reads en analyse met DESeq2 werden in totaal 29.407 genen onderzocht. Hiervan werden 4.572 genen als significant geëxpresseerd gevonden tussen gezonde controles en patiënten met reumatoïde artritis (padj < 0,05 en |log2FoldChange| > 1). Van deze genen waren er 2.085 verhoogd tot expressie en 2.487 verlaagd tot expressie in de groep met reumatoïde artritis.
 
-De volcano plot (Figuur 1) laat zien dat meerdere genen sterke veranderingen in expressie vertoonden ten opzichte van de controle **Hoeveel?, kijk volcano plot**. Voorbeelden van genen met een verhoogde expressie zijn CD28 (log2FC = 3,82), SRGN (log2FC = 3,26) en CXCL8 (log2FC = 8,89) en met verlaagde expressie zijn ANKRD30BL (log2FC = -10,11), SLC9A3R2 (log2FC = -5,61) en BAX (Log2FC = -3,47)
+De volcano plot (Figuur 1) laat zien dat 29407 genen sterke veranderingen in expressie vertoonden ten opzichte van de controle. Voorbeelden van genen met een verhoogde expressie zijn CD28 (log2FC = 3,82), SRGN (log2FC = 3,26) en CXCL8 (log2FC = 8,89) en met verlaagde expressie zijn ANKRD30BL (log2FC = -10,11), SLC9A3R2 (log2FC = -5,61) en BAX (Log2FC = -3,47)
 
 De GO-analyse identificeerde in totaal 323 significant GO-termen (padj < 0,05). De sterkst verrijkte biologische processen waren lymphocyte differentiation, adaptive immune response, B cell mediated immunity en immune response-regulating cell surface receptor signaling pathway (Figuur 2).
 
@@ -44,7 +44,7 @@ Figuur 1. Volcano plot van verschillen in genexpressie tussen gezonde controles 
 
 **GO-analyse barplot**
 
-<img width="692" height="460" alt="Barplot" src="https://github.com/user-attachments/assets/7f7044ef-29af-469d-ab6d-c4cbb037a4b2" />
+<img width="1208" height="460" alt="image" src="https://github.com/user-attachments/assets/843fa1b6-0bf7-4eee-9085-fa79bb822730" />
 
 Figuur 2. Top 10 verschillen in biologische processen uit de GO-analyse. De analyse werd uitgevoerd op significant geëxpresseerde genen (padj < 0,05 en log2FC > 1). De weergegeven GO-termen zijn gerangschikt op significantie en laten zien welke biologische processen het sterkst vertegenwoordigd zijn binnen de dataset.
 
@@ -73,3 +73,18 @@ o File met uitleg over toepassing beheren met GitHub
 **Alle bronnen toegevoegd in het mapje**
 **Feedback verwerken**
 **rubric document nog nachecken**
+**Nieuwe Bar-plot toevoegen en in conclusie aanpassen**
+
+
+
+# **Bronnenlijst**
+
+McInnes, I., Schett, G. Cytokines in the pathogenesis of rheumatoid arthritis. Nat Rev Immunol 7, 429–442 (2007). https://doi.org/10.1038/nri2094
+
+Platzer A, Nussbaumer T, Karonitsch T, Smolen JS, Aletaha D (2019) Analysis of gene expression in rheumatoid arthritis and related conditions offers insights into sex-bias, gene biotypes and co-expression patterns. PLoS ONE 14(7): e0219698. https://doi.org/10.1371/journal.pone.0219698
+
+Smolen J, Aletaha D, McInnes I, Rheumatoid arthritis, The Lancet, 2016; 388, 2023-2038 https://doi.org/10.1016/S0140-6736(16)30173-8
+
+Sumitomo, S., Nagafuchi, Y., Tsuchida, Y. et al. Transcriptome analysis of peripheral blood from patients with rheumatoid arthritis: a systematic review. Inflamm Regener 38, 21 (2018). https://doi.org/10.1186/s41232-018-0078-5
+
+Zhang, F., Wei, K., Slowikowski, K. et al. Defining inflammatory cell states in rheumatoid arthritis joint synovial tissues by integrating single-cell transcriptomics and mass cytometry. Nat Immunol 20, 928–942 (2019). https://doi.org/10.1038/s41590-019-0378-1
