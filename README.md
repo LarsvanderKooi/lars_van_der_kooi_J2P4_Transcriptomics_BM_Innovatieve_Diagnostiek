@@ -44,7 +44,7 @@ Figuur 1. Volcano plot van verschillen in genexpressie tussen gezonde controles 
 
 **GO-analyse barplot**
 
-<img width="604" height="320" alt="image" src="https://github.com/user-attachments/assets/1e746aab-f0ba-441a-bf3e-660163f8c46b" />
+<img width="1208" height="460" alt="image" src="https://github.com/user-attachments/assets/843fa1b6-0bf7-4eee-9085-fa79bb822730" />
 
 Figuur 2. Top 10 verschillen in biologische processen uit de GO-analyse. De analyse werd uitgevoerd op significant geëxpresseerde genen (padj < 0,05 en log2FC > 1). De weergegeven GO-termen zijn gerangschikt op significantie en laten zien welke biologische processen het sterkst vertegenwoordigd zijn binnen de dataset.
 
