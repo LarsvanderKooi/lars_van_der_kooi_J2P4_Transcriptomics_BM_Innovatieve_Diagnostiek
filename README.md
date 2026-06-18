@@ -8,37 +8,37 @@
 * **assets/** - overige documenten voor de opmaak van deze pagina
 
 # **Introductie**
-Reumatoïde artritis is een chronische auto-immuunziekte waarbij langdurige ontsteking van de gewrichten aanwezig zijn bij patiënten. Deze ontsteking leidt tot pijn, zwelling en beschadiging van kraakbeen en bot. Reumatoïde artritis ontstaat door een verstoring van het immuunsysteem, waarbij zowel aangeboren als adaptieve immuunreacties zijn betrokken. T-cellen, B-cellen en macrofagen, spelen een belangrijke rol bij het in stand houden van de ontstekingsreactie. (McInnes & Schett, 2007)
+Reumatoïde artritis (RA) is een chronische auto-immuunziekte die wordt gekenmerkt door aanhoudende ontsteking van de gewrichten. Deze ontsteking veroorzaakt pijn, zwelling en beschadiging van kraakbeen en bot. Zowel aangeboren als adaptieve immuunreacties spelen een belangrijke rol bij het ontstaan en in stand houden van de ziekte, waarbij onder andere T-cellen, B-cellen en macrofagen betrokken zijn (McInnes & Schett, 2007).
 
-Door de ontwikkeling van RNA-sequencing (RNA-seq) is het mogelijk om veranderingen in genexpressie op een grotere schaal te onderzoeken. RNA-seq maakt het mogelijk om duizenden genen tegelijkertijd te analyseren en verschillen tussen gezonde en zieke individuen te vergelijken. Analyse van RNA-sequentie data kan zicht geven in de moleculaire werking die kunnen bijdragen aan het ontstaan van RA. (Sumitomo et al., 2018)
+Met de ontwikkeling van RNA-sequencing (RNA-seq) is het mogelijk geworden om veranderingen in genexpressie op grote schaal te onderzoeken. Deze techniek maakt het mogelijk duizenden genen gelijktijdig te analyseren en verschillen tussen gezonde personen en patiënten te identificeren. Hierdoor kunnen moleculaire mechanismen die bijdragen aan het ontstaan en de progressie van RA beter worden begrepen (Sumitomo et al., 2018).
 
-Hoewel reumatoïde artritis uitgebreid is onderzocht, is nog niet duidelijk welke genen en biologische processen het sterkst verschillen tussen gezonde personen en patiënten met RA. Analyse van genexpressie kan helpen deze moleculaire mechanismen beter in kaart te brengen.
-
-In deze studie werden RNA-sequentie data uit (Platzer et al., 2019) van gezonde controles en patiënten met reumatoïde artritis geanalyseerd waarbij de samples zijn verkregen via een synoviumbiop. Met het R pakket DESeq2 werden differentieel genen die tot expressie gebracht waren geïdentificeerd. Vervolgens werd er een GO-analyse en een KEGG-pathway-analyse uitgevoerd om de biologische processen en signaalroutes te bepalen die betrokken zijn bij de veranderingen in genexpressie. Het doel van deze studie was om verschillen in genexpressie tussen gezonde en RA-monsters te identificeren.
+Hoewel RA uitgebreid is onderzocht, is nog niet volledig duidelijk welke genen en biologische processen het sterkst verschillen tussen gezonde personen en RA-patiënten. Een beter inzicht hierin kan bijdragen aan het begrijpen van de ziekteprocessen die ten grondslag liggen aan RA. Daarom werden in deze studie RNA-seq-data van synoviumbiopten van gezonde controles en RA-patiënten geanalyseerd. Met DESeq2 werden differentieel geëxpresseerde genen geïdentificeerd, gevolgd door GO- en KEGG-analyses. Het doel van deze studie was het identificeren van verschillen in genexpressie en de daarbij betrokken biologische processen en een signaalroute.
 
 Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
 
 # **Methode**
 <img width="1562" height="456" alt="image" src="https://github.com/user-attachments/assets/3cfc1a46-19fc-464a-93db-7d893c955114" />
 
-Bij dit onderzoek werd gebruikgemaakt van RNA-sequencing data van vier gezonde controles en vier patiënten met reumatoïde artritis. De analyse werd uitgevoerd met behulp van R (version 4.5.2).
-De ruwe FASTQ-files werden eerst gemapt tegen het humane referentiegenoom (GRCh38, versie GCF_000001405.40) met behulp van het R-pakket Rsubread. Hiervoor werd een referentie-index opgebouwd met buildindex(), waarna paired-end reads werden uitgelijnd met align(). Vervolgens werd met featureCounts() het aantal reads per gen bepaald op basis van een GTF-bestand. Hierdoor werd er een countmatrix met genexpressiewaarden voor alle monsters verkregen.
-Verschillen in genexpressie tussen gezonde en patiënten-monsters werden bepaald met het pakket DESeq2. De countmatrix en experimentele condities werden ingelezen in een DESeq2-object, waarna normalisatie en statistische analyse werd uitgevoerd. Genen met een aangepaste p-waarde (padj) kleiner dan 0,05 en een absolute log2 fold change groter dan 1 werden beschouwd als significant differentieel geëxpresseerd. De resultaten werden gevisualiseerd met een volcano plot.
-Om de biologische betekenis van de gevonden genen te onderzoeken, werd een (GO)-analyse uitgevoerd met het pakket clusterProfiler. Hiermee werden overheersende biologische processen geïdentificeerd. Daarnaast werd er een KEGG pathway-analyse uitgevoerd. De pathway "Rheumatoid Arthritis" (hsa05323, https://www.genome.jp/dbget-bin/www_bget?pathway+hsa05323) werd gevisualiseerd met het pakket pathview, waardoor genexpressieveranderingen binnen bekende ziekte-gerelateerde signaalroutes konden worden bekeken en vergeleken.
+Voor dit onderzoek werd gebruikgemaakt van paired-end RNA-sequencingdata van vier gezonde controles en vier patiënten met reumatoïde artritis afkomstig uit Platzer et al. (2019). De analyse werd uitgevoerd in R (versie 4.5.2).
 
-De bijbehorend scripts en packages kunnen worden gevonden in het mapje “Scripts”, rauwe data in het mapje "Data", verdere bestanden waaronder de, Count matrix, DESeq2 file, GO-resultaten en het Metadata kunnen worden gevonden in het mapje "Resultaten"
+De ruwe FASTQ-bestanden werden gemapt tegen het humane referentiegenoom (GRCh38, versie GCF_000001405.40) met behulp van het pakket Rsubread. Eerst werd een referentie-index opgebouwd met buildindex(), waarna paired-end reads werden uitgelijnd met align(). Vervolgens werd met featureCounts() het aantal reads per gen bepaald op basis van een GTF-bestand, wat resulteerde in een countmatrix met genexpressiewaarden voor alle monsters.
+Verschillen in genexpressie tussen gezonde controles en RA-patiënten werden geanalyseerd met DESeq2. Na normalisatie en statistische analyse werden genen met een aangepaste p-waarde (padj) < 0,05 en een absolute log2 fold change > 1 beschouwd als significant differentieel geëxpresseerd. De resultaten werden gevisualiseerd met een volcano plot.
+Om de biologische betekenis van deze genen te onderzoeken, werden GO- en KEGG-analyses uitgevoerd met clusterProfiler. Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd met pathview om genexpressieveranderingen binnen ziekte-gerelateerde signaalroutes te bestuderen.
+
+Alle scripts, ruwe data en analysebestanden zijn opgenomen in de mappen Scripts, Data en Resultaten.
+
 
 
 # **Resultaten**
-Om verschillen in genexpressie tussen gezonde controles en patiënten met reumatoïde artritis te identificeren, werd RNA-sequencing data geanalyseerd met behulp van DESeq2, gevolgd door een GO en een KEGG analyse.
+Om verschillen in genexpressie tussen gezonde controles en patiënten met reumatoïde artritis te identificeren, werd  data geanalyseerd met behulp van DESeq2, gevolgd door een GO-analyse en een KEGG-analyse.
 
 ### **Differentiële genexpressie**
-Na het mappen van de RNA-sequencing reads en analyse met DESeq2 werden in totaal 29.407 genen onderzocht. Hiervan werden 4.572 genen als significant geëxpresseerd gevonden tussen gezonde controles en patiënten met reumatoïde artritis (padj < 0,05 en |log2FoldChange| > 1). Van deze genen waren er 2.085 verhoogd tot expressie en 2.487 verlaagd tot expressie in de groep met reumatoïde artritis.
+Na het mappen van de  reads en analyse met DESeq2 werden in totaal 29.407 genen onderzocht. Hiervan werden 4.572 genen als significant differentieel geëxpresseerd gevonden tussen gezonde controles en patiënten met reumatoïde artritis (padj < 0,05 en |log2FoldChange| > 1). Van deze genen waren er 2.085 verhoogd tot expressie en 2.487 verlaagd tot expressie in de groep met reumatoïde artritis.
 
 De volcano plot (Figuur 1) geeft de expressieveranderingen van alle 29.407 onderzochte genen aan. Hiervan werden 4.572 genen als significant differentieel geëxpresseerd geïdentificeerd. Voorbeelden van genen met een verhoogde expressie zijn CD28 (log2FC = 3,82), SRGN (log2FC = 3,26) en CXCL8 (log2FC = 8,89) en met verlaagde expressie zijn ANKRD30BL (log2FC = -10,11), SLC9A3R2 (log2FC = -5,61) en BAX (Log2FC = -3,47)
 
 ### **Gene Ontology analyse**
-De GO-analyse identificeerde in totaal 323 significant GO-termen (padj < 0,05). De sterkst verrijkte biologische processen waren lymphocyte differentiation, adaptive immune response, B cell mediated immunity en immune response-regulating cell surface receptor signaling pathway (Figuur 2).
+De GO-analyse identificeerde in totaal 323 significante GO-termen (padj < 0,05). De sterkst verrijkte biologische processen waren lymphocyte differentiation, adaptive immune response, B cell mediated immunity en immune response-regulating cell surface receptor signaling pathway (Figuur 2).
 
 ### **KEGG pathway analyse**
 Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd met behulp van Pathview (Figuur 3). Binnen deze pathway werden verschillende genen met verhoogde expressie aangetroffen, waaronder IL1B, IFNG, TLR2, TLR4, CXCL1 en CD28. De pathwayvisualisatie liet zien dat meerdere genen binnen deze signaalroute veranderde expressieniveaus vertoonden ten opzichte van de controlegroep.
@@ -63,9 +63,9 @@ Figuur 3. Visualisatie van de KEGG-pathway Rheumatoid Arthritis (hsa05323) met b
 
 
 # **Conclusie**
-In deze studie werd RNA-sequencing data van gezonde controles en patiënten met reumatoïde artritis geanalyseerd om verschillen in genexpressie te identificeren. Met behulp van DESeq2 werden 4.572 significant differentieel geëxpresseerde genen gevonden. De GO-analyse liet zien dat vooral immuungerelateerde processen verrijkt waren, waaronder lymphocyte differentiation, adaptive immune response en B cell mediated immunity. Daarnaast toonde de KEGG-analyse van de Rheumatoid Arthritis-pathway verhoogde expressie van meerdere ontstekingsgerelateerde genen, waaronder IL1B, IFNG, TLR2, TLR4 en CD28.
-Deze resultaten komt overeen met een studie over reumatoïde artritis als een chronische auto-immuunziekte waarbij er een ontregeling is van zowel het aangeboren als het adaptieve immuniteit die een belangrijke rol speelt bij reumatoïde artritis (Smolen et al., 2020). Ook sluiten de bevindingen aan bij een eerdere studie waarbij transcriptomics was gebruikt, in deze studie werd er een verhoogde activiteit van immuuncellen en ontstekingsroutes bij reumatoïde artritis patiënten gevonden (Zhang et al., 2019).
-Een beperking van deze studie is het relatief kleine aantal monsters en het gebruik van subsets van de sequencingdata. Toekomstig onderzoek kan gebruikmaken van meer en grotere datasets en het gebruiken van meer validatiemethoden, zoals qPCR. Het gebruik van transcriptomics  toont aan dat dit een goede methode is om biologische processen en signaalroutes betrokken bij in dit geval reumatoïde artritis in kaart te brengen.
+In deze studie werd RNA-sequencingdata van gezonde controles en patiënten met reumatoïde artritis geanalyseerd om verschillen in genexpressie te identificeren. Met behulp van DESeq2 werden 4.572 significant differentieel geëxpresseerde genen gevonden. De GO-analyse liet zien dat vooral immuungerelateerde processen verrijkt waren, waaronder lymphocyte differentiation, adaptive immune response en B cell mediated immunity. Daarnaast toonde de KEGG-analyse van de Rheumatoid Arthritis-pathway verhoogde expressie van meerdere ontstekingsgerelateerde genen, waaronder IL1B, IFNG, TLR2, TLR4 en CD28.
+Deze resultaten komen overeen met een studie over reumatoïde artritis als een chronische auto-immuunziekte waarbij sprake is van een ontregeling is van zowel het aangeboren als de adaptieve immuniteit die een belangrijke rol speelt bij reumatoïde artritis (Smolen et al., 2020). Ook sluiten de bevindingen aan bij een eerdere studie waarbij transcriptomics was gebruikt, in deze studie werd er een verhoogde activiteit van immuuncellen en ontstekingsroutes bij patiënten met eumatoïde artritis gevonden (Zhang et al., 2019).
+Een beperking van deze studie is het relatief kleine aantal monsters en het gebruik van subsets van de sequencingdata. Toekomstig onderzoek kan gebruik maken van grotere datasets en aanvullende validatiemethoden, zoals qPCR. Deze resultaten laten zien dat transcriptomics een geschikte methode is om biologische processen en signaalroutes die betrokken zijn bij reumatoïde artritis in kaart te brengen.
 
 Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
 
@@ -78,9 +78,8 @@ o File met uitleg over toepassing beheren met GitHub
 **checken R script juist geupdate**
 **spelling/gramatica check**
 **Alle bronnen toegevoegd in het mapje**
-**Feedback verwerken**
 **rubric document nog nachecken**
-**in methode is statistiek goed aangegeven?**
+**in methode is statistiek goed aangegeven, nu goed volledig verhaal?, extra bronnen of mist er nog een bron in de bronnenlijst + AI disclaimer**
 
 
 
