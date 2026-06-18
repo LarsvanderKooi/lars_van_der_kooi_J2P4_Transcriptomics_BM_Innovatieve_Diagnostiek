@@ -2,7 +2,7 @@
 
 # **Inhoud & Structuur**
 * **Scripts/** - Gebruikte scripts
-* **Resultaten/** - Grafieken en tabellen
+* **Resultaten/** - opgeslagen bestanden en afbeeldingen van de analyse
 * **Bronnen/** - Gebruikte bronnen
 * **README.md/** het document om de tekst hier te genereren
 
