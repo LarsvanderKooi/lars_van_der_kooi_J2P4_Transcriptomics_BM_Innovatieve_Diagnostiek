@@ -79,6 +79,7 @@ o File met uitleg over toepassing beheren met GitHub
 **Alle bronnen toegevoegd in het mapje**
 **rubric document nog nachecken**
 **in methode is statistiek goed aangegeven, nu goed volledig verhaal?, extra bronnen of mist er nog een bron in de bronnenlijst + AI disclaimer**
+**Bestandnamen aanpassen naar datum**
 
 
 
