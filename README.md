@@ -5,7 +5,6 @@
 * **Resultaten/** - Grafieken en tabellen
 * **Bronnen/** - Gebruikte bronnen
 * **README.md/** het document om de tekst hier te genereren
-* **assets/** - overige documenten voor de opmaak van deze pagina
 
 # **Introductie**
 Reumatoïde artritis (RA) is een chronische auto-immuunziekte die wordt gekenmerkt door aanhoudende ontsteking van de gewrichten. Deze ontsteking veroorzaakt pijn, zwelling en beschadiging van kraakbeen en bot. Zowel aangeboren als adaptieve immuunreacties spelen een belangrijke rol bij het ontstaan en in stand houden van de ziekte, waarbij onder andere T-cellen, B-cellen en macrofagen betrokken zijn (McInnes & Schett, 2007).
