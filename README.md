@@ -74,13 +74,13 @@ kijk op BB voor hulpvragen
 o File (bijvoorbeeld een md file) met uitleg over Data Stewardship
 o File met uitleg over toepassing beheren met GitHub
 
-**checken R script juist geupdate**
+**checken R script juist geupdate, uitleg eruit halen**
 **spelling/gramatica check**
 **Alle bronnen toegevoegd in het mapje**
 **rubric document nog nachecken**
 **in methode is statistiek goed aangegeven, nu goed volledig verhaal?, extra bronnen of mist er nog een bron in de bronnenlijst + AI disclaimer**
 **Bestandnamen aanpassen naar datum**
-**BAM-files toevoegen**
+
 
 
 
