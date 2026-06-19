@@ -74,7 +74,7 @@ Een beperking van deze studie is het relatief kleine aantal monsters en het gebr
 Gebruikte bronnen zijn te vinden in de bronnenlijst en het mapje "Bronnen"
 
 # **Data stewardship**
-De bestanden voor de opdracht van data stewardship zijn te vinden in het mapje "Data stewardship"
+De bestanden voor data stewardship zijn geplaatst in het mapje "Data stewardship"
 
 # **Bronnenlijst & disclaimer**
 
