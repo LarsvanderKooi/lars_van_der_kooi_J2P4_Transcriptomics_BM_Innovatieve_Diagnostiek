@@ -4,6 +4,7 @@
 * **Scripts + packages/** - Gebruikte scripts en packages
 * **Resultaten/** - opgeslagen bestanden en afbeeldingen van de analyse
 * **Bronnen/** - Gebruikte bronnen
+* **Data stewardship/** - hierin staan de bestanden voor de opdracht data stewardship
 * **README.md/** het document om de tekst hier te genereren
 
 # **Introductie**
@@ -13,7 +14,7 @@ Met de ontwikkeling van RNA-sequencing (RNA-seq) is het mogelijk geworden om ver
 
 Hoewel RA uitgebreid is onderzocht, is nog niet volledig duidelijk welke genen en biologische processen het sterkst verschillen tussen gezonde personen en RA-patiënten. Een beter inzicht hierin kan bijdragen aan het begrijpen van de ziekteprocessen die ten grondslag liggen aan RA. Daarom werden in deze studie RNA-seq-data van synoviumbiopten van gezonde controles en RA-patiënten geanalyseerd. Met DESeq2 werden differentieel geëxpresseerde genen geïdentificeerd, gevolgd door GO- en KEGG-analyses. Het doel van deze studie was het identificeren van verschillen in genexpressie en de daarbij betrokken biologische processen en een signaalroute.
 
-Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
+Gebruikte bronnen zijn te vinden in de bronnenlijst en het mapje "Bronnen"
 
 # **Methode**
 <img width="1562" height="456" alt="image" src="https://github.com/user-attachments/assets/3cfc1a46-19fc-464a-93db-7d893c955114" />
@@ -25,7 +26,7 @@ Verschillen in genexpressie tussen gezonde controles en RA-patiënten werden gea
 Om de biologische betekenis van deze genen te onderzoeken, werden GO- en KEGG-analyses uitgevoerd met het R-pakket clusterprofiler(Yu et al., 2012). Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd met pathview om genexpressieveranderingen binnen ziekte-gerelateerde signaalroutes te bestuderen.
 
 Alle scripts, ruwe data en analysebestanden zijn opgenomen in de mappen Scripts, Data en Resultaten.
-
+Gebruikte bronnen zijn te vinden in de bronnenlijst en het mapje "Bronnen"
 
 
 # **Resultaten**
@@ -63,10 +64,13 @@ Figuur 3. Visualisatie van de KEGG-pathway Rheumatoid Arthritis (hsa05323) met b
 
 # **Conclusie**
 In deze studie werd RNA-sequencingdata van gezonde controles en patiënten met reumatoïde artritis geanalyseerd om verschillen in genexpressie te identificeren. Met behulp van DESeq2 werden 4.572 significant differentieel geëxpresseerde genen gevonden. De GO-analyse liet zien dat vooral immuungerelateerde processen verrijkt waren, waaronder lymphocyte differentiation, adaptive immune response en B cell mediated immunity. Daarnaast toonde de KEGG-analyse van de Rheumatoid Arthritis-pathway verhoogde expressie van meerdere ontstekingsgerelateerde genen, waaronder IL1B, IFNG, TLR2, TLR4 en CD28.
-Deze resultaten komen overeen met een studie over reumatoïde artritis als een chronische auto-immuunziekte waarbij sprake is van een ontregeling is van zowel het aangeboren als de adaptieve immuniteit die een belangrijke rol speelt bij reumatoïde artritis (Smolen et al., 2020). Ook sluiten de bevindingen aan bij een eerdere studie waarbij transcriptomics was gebruikt, in deze studie werd er een verhoogde activiteit van immuuncellen en ontstekingsroutes bij patiënten met eumatoïde artritis gevonden (Zhang et al., 2019).
+Deze resultaten komen overeen met een studie over reumatoïde artritis als een chronische auto-immuunziekte waarbij sprake is van een ontregeling is van zowel het aangeboren als de adaptieve immuniteit die een belangrijke rol speelt bij reumatoïde artritis (Smolen et al., 2020). Ook sluiten de bevindingen aan bij een eerdere studie waarbij transcriptomics was gebruikt, in deze studie werd er een verhoogde activiteit van immuuncellen en ontstekingsroutes bij patiënten met reumatoïde artritis gevonden (Zhang et al., 2019).
 Een beperking van deze studie is het relatief kleine aantal monsters en het gebruik van subsets van de sequencingdata. Toekomstig onderzoek kan gebruik maken van grotere datasets en aanvullende validatiemethoden, zoals qPCR. Deze resultaten laten zien dat transcriptomics een geschikte methode is om biologische processen en signaalroutes die betrokken zijn bij reumatoïde artritis in kaart te brengen.
 
-Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
+Gebruikte bronnen zijn te vinden in de bronnenlijst en het mapje "Bronnen"
+
+# **Data stewardship**
+De bestanden voor de opdracht van data stewardship zijn te vinden in het mapje "Data stewardship"
 
 # **Bronnenlijst & disclaimer**
 
@@ -78,4 +82,9 @@ Smolen J, Aletaha D, McInnes I, Rheumatoid arthritis, The Lancet, 2016; 388, 202
 
 Sumitomo, S., Nagafuchi, Y., Tsuchida, Y. et al. Transcriptome analysis of peripheral blood from patients with rheumatoid arthritis: a systematic review. Inflamm Regener 38, 21 (2018). https://doi.org/10.1186/s41232-018-0078-5
 
+Yu, G., Wang, L.-G., Han, Y., & He, Q.-Y. (2012). clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS: A Journal of Integrative Biology, 16(5), 284–287. https://doi.org/10.1089/omi.2011.0118
+
 Zhang, F., Wei, K., Slowikowski, K. et al. Defining inflammatory cell states in rheumatoid arthritis joint synovial tissues by integrating single-cell transcriptomics and mass cytometry. Nat Immunol 20, 928–942 (2019). https://doi.org/10.1038/s41590-019-0378-1
+
+AI-gebruik
+ChatGPT (OpenAI) is gebruikt als hulpmiddel voor het inkorten, herformuleren en controleren van teksten. De analyses, resultaten, interpretaties en conclusies zijn zelfstandig uitgevoerd.
