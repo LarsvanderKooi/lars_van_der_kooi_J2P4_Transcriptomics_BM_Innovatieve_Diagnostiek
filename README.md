@@ -68,23 +68,7 @@ Een beperking van deze studie is het relatief kleine aantal monsters en het gebr
 
 Gebruikte bronnen zijn te vinden in het mapje "Bronnen"
 
-##**Nog doen!!**
-**uitleg competentie beheren**
-kijk op BB voor hulpvragen
-o File (bijvoorbeeld een md file) met uitleg over Data Stewardship
-o File met uitleg over toepassing beheren met GitHub
-
-**checken R script juist geupdate, uitleg eruit halen**
-**spelling/gramatica check**
-**Alle bronnen toegevoegd in het mapje**
-**rubric document nog nachecken**
-**in methode is statistiek goed aangegeven, nu goed volledig verhaal?, extra bronnen of mist er nog een bron in de bronnenlijst + AI disclaimer**
-**Bestandnamen aanpassen naar datum**
-
-
-
-
-# **Bronnenlijst**
+# **Bronnenlijst & disclaimer**
 
 McInnes, I., Schett, G. Cytokines in the pathogenesis of rheumatoid arthritis. Nat Rev Immunol 7, 429–442 (2007). https://doi.org/10.1038/nri2094
 
