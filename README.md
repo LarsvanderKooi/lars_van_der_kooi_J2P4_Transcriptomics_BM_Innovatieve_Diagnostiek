@@ -28,7 +28,7 @@ De ruwe FASTQ-bestanden werden gemapt tegen het humane referentiegenoom (GRCh38,
 Verschillen in genexpressie tussen gezonde controles en RA-patiënten werden geanalyseerd met DESeq2. Na normalisatie en statistische analyse werden genen met een aangepaste p-waarde (padj) < 0,05 en een absolute log2 fold change > 1 beschouwd als significant differentieel geëxpresseerd. De resultaten werden gevisualiseerd met een volcano plot.
 Om de biologische betekenis van deze genen te onderzoeken, werden GO- en KEGG-analyses uitgevoerd met het R-pakket clusterprofiler (Yu et al., 2012). Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd met pathview om genexpressieveranderingen binnen ziekte-gerelateerde signaalroutes te bestuderen.
 
-Alle scripts, ruwe data en analysebestanden zijn opgenomen in de mappen Scripts, Data en Resultaten.
+Alle scripts, ruwe data en analysebestanden zijn opgenomen in de mappen Scripts, FASTQ-files en Resultaten.
 Gebruikte bronnen zijn te vinden in de bronnenlijst en het mapje "Bronnen"
 
 
