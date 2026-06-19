@@ -19,6 +19,7 @@ Gebruikte bronnen zijn te vinden in de bronnenlijst en het mapje "Bronnen"
 # **Methode**
 <img width="1562" height="456" alt="image" src="https://github.com/user-attachments/assets/3cfc1a46-19fc-464a-93db-7d893c955114" />
 
+
 Figuur 1. Flowchart transcriptomics
 
 Voor dit onderzoek werd gebruikgemaakt van paired-end RNA-sequencingdata van vier gezonde controles en vier patiënten met reumatoïde artritis afkomstig uit Platzer et al. (2019). De analyse werd uitgevoerd in R (versie 4.5.2).
