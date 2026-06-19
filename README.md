@@ -1,6 +1,7 @@
 # **Reumatoïde artritis wordt gekenmerkt door sterke adaptieve en betrokken aangeboren immuunactivatie.**
 
 # **Inhoud & Structuur**
+* **FASTQ-files/** - hierin zitten de gebruikte FASTQ-files
 * **Scripts & packages/** - Gebruikte scripts en packages
 * **Resultaten/** - opgeslagen bestanden en afbeeldingen van de analyse
 * **Bronnen/** - Gebruikte bronnen
