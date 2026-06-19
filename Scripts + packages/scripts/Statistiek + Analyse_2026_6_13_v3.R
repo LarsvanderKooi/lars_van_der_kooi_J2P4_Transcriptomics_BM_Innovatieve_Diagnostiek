@@ -1,13 +1,16 @@
+#count matrix inladen
 counts_project <- read.csv("Project_countmatrix.csv", row.names = 1)
+#kijken of de count matrix goed is ingeladen
 counts_project
 
+#sample metadata 
 treatment <- c("Normaal", "Normaal", "Normaal", "Normaal", "Ziek", "Ziek", "Ziek", "Ziek")
 treatment_table_project <- data.frame(treatment)
 
 rownames(treatment_table_project) <- c('Norm1', 'Norm2', 'Norm3', 'Norm4', 'Ziek1', 'Ziek2', "Ziek3", "Ziek4")
 head(treatment_table_project)
 
-#metadata opslaan voor GitHub
+#metadata apart opslaan
 metadata <- data.frame(
   Sample = rownames(treatment_table_project),
   Treatment = treatment_table_project$treatment
@@ -19,21 +22,25 @@ write.csv(
   row.names = FALSE
 )
 
+#DESeq2 object maken
 dds_project <- DESeqDataSetFromMatrix(countData = counts_Project,
                                       colData = treatment_table_project,
                                       design = ~ treatment)
 head(dds_project)
 
+#differential expression analyse uitvoeren
 dds_project <- DESeq(dds_project)
 resultaten <- results(dds_project)
 head(resultaten)
 
+#resultaten exporteren
 write.table(resultaten, file = 'Resultaten_Project.csv', row.names = TRUE, col.names = TRUE)
-head(write.table)
 
+#aantal significant up en downgereguleerde genen
 sum(resultaten$padj < 0.05 & resultaten$log2FoldChange > 1, na.rm = TRUE)
 sum(resultaten$padj < 0.05 & resultaten$log2FoldChange < -1, na.rm = TRUE)
 
+#sorteren van genen op effectgrootte
 hoogste_fold_change <- resultaten[order(resultaten$log2FoldChange, decreasing = TRUE), ]
 laagste_fold_change <- resultaten[order(resultaten$log2FoldChange, decreasing = FALSE), ]
 laagste_p_waarde<- resultaten[order(resultaten$padj, decreasing = FALSE), ]
@@ -42,11 +49,13 @@ head(hoogste_fold_change)
 head(laagste_fold_change)
 head(laagste_p_waarde)
 
+#volcano plot (visualiseren van DEseq2 resultaten)
 EnhancedVolcano(resultaten,
                 lab = rownames(resultaten),
                 x = 'log2FoldChange',
                 y = 'padj')
 
+#opslaan van plot
 dev.copy(png, 'VolcanoplotWC.png', 
          width = 8,
          height = 10,
@@ -54,6 +63,7 @@ dev.copy(png, 'VolcanoplotWC.png',
          res = 500)
 dev.off()
 
+#selecteren van significante genen
 sig_genes <- resultaten[
   !is.na(resultaten$padj) &
     resultaten$padj < 0.05 &
@@ -64,6 +74,7 @@ nrow(sig_genes)
 
 head(sig_genes)
 
+#gen-ID conversie van SYMBOL -> ENTREZID
 gene.df <- bitr(
   rownames(sig_genes),
   fromType = "SYMBOL",
@@ -73,6 +84,7 @@ gene.df <- bitr(
 
 gene.df <- na.omit(gene.df)
 
+#Gene ontology enrichment analyse
 ego_BP <- enrichGO(
   gene = gene.df$ENTREZID,
   OrgDb = org.Hs.eg.db,
@@ -94,12 +106,14 @@ write.csv(
 head(as.data.frame(ego_BP))
 dim(as.data.frame(ego_BP))
 
+#Go visualisatie
 barplot(ego_BP, showCategory = 10, font.size = 8, label_format = 40) +
   theme(
     axis.text.y = element_text(size = 8),
     plot.title = element_text(hjust = 0.5)
   )
 
+#LogFC dataset voor pathway analyse
 fc.df <- data.frame(
   SYMBOL = rownames(resultaten),
   logFC = resultaten$log2FoldChange
@@ -107,7 +121,7 @@ fc.df <- data.frame(
 head(fc.df)
 dim(fc.df)
 
-
+#koppelen van LogFC met ENTREZ IDs
 fc.entrez <- merge(
   gene.df,
   fc.df,
@@ -123,7 +137,7 @@ names(gene.data) <- fc.entrez$ENTREZID
 head(gene.data)
 length(gene.data)
 
-
+#KEGG pathway visualisatie (hsa05323)
 pathview(
   gene.data = gene.data,
   pathway.id = "hsa05323",
