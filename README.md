@@ -1,4 +1,4 @@
-# **Differentiële genexpressie bij reumatoïde artritis wijst op activatie van adaptieve immuunresponsen.**
+# **Reumatoïde artritis wordt gekenmerkt door sterke adaptieve en betrokken aangeboren immuunactivatie.**
 
 # **Inhoud & Structuur**
 * **Scripts & packages/** - Gebruikte scripts en packages
