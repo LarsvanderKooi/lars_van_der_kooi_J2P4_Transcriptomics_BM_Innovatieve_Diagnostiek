@@ -1,7 +1,7 @@
 # **Differentiële genexpressie bij reumatoïde artritis wijst op activatie van adaptieve immuunresponsen**
 
 # **Inhoud & Structuur**
-* **Scripts/** - Gebruikte scripts
+* **Scripts + packages/** - Gebruikte scripts en packages
 * **Resultaten/** - opgeslagen bestanden en afbeeldingen van de analyse
 * **Bronnen/** - Gebruikte bronnen
 * **README.md/** het document om de tekst hier te genereren
