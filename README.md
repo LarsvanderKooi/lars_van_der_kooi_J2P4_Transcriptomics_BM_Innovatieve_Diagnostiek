@@ -22,7 +22,7 @@ Voor dit onderzoek werd gebruikgemaakt van paired-end RNA-sequencingdata van vie
 
 De ruwe FASTQ-bestanden werden gemapt tegen het humane referentiegenoom (GRCh38, versie GCF_000001405.40) met behulp van het pakket Rsubread. Eerst werd een referentie-index opgebouwd met buildindex(), waarna paired-end reads werden uitgelijnd met align(). Vervolgens werd met featureCounts() het aantal reads per gen bepaald op basis van een GTF-bestand, wat resulteerde in een countmatrix met genexpressiewaarden voor alle monsters.
 Verschillen in genexpressie tussen gezonde controles en RA-patiënten werden geanalyseerd met DESeq2. Na normalisatie en statistische analyse werden genen met een aangepaste p-waarde (padj) < 0,05 en een absolute log2 fold change > 1 beschouwd als significant differentieel geëxpresseerd. De resultaten werden gevisualiseerd met een volcano plot.
-Om de biologische betekenis van deze genen te onderzoeken, werden GO- en KEGG-analyses uitgevoerd met clusterProfiler. Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd met pathview om genexpressieveranderingen binnen ziekte-gerelateerde signaalroutes te bestuderen.
+Om de biologische betekenis van deze genen te onderzoeken, werden GO- en KEGG-analyses uitgevoerd met het R-pakket clusterprofiler(Yu et al., 2012). Daarnaast werd de KEGG-pathway Rheumatoid Arthritis (hsa05323) gevisualiseerd met pathview om genexpressieveranderingen binnen ziekte-gerelateerde signaalroutes te bestuderen.
 
 Alle scripts, ruwe data en analysebestanden zijn opgenomen in de mappen Scripts, Data en Resultaten.
 
